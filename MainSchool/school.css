@@ -1,0 +1,296 @@
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap');
+
+:root {
+    --primary-color: #0d47a1;
+    --secondary-color: #ffd700;
+}
+
+.head-size {
+    font-size: 18px;
+}
+
+body {
+    font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+}
+
+/* Navbar */
+.navbar {
+    padding: 1rem 0;
+}
+
+.navbar-brand {
+    font-size: 1.5rem;
+}
+
+/* Hero Section */
+.carousel-item {
+    height: 100vh;
+}
+
+.carousel-item img {
+    object-fit: cover;
+    height: 70%;
+}
+
+.carousel-caption {
+    background: rgba(0, 0, 0, 0.5);
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 2rem;
+    margin-bottom: 140px;
+}
+
+/* Cards */
+.card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+/* Facility Cards */
+.facility-card {
+    position: relative;
+    overflow: hidden;
+    border-radius: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.facility-card img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.facility-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.8), transparent);
+    color: white;
+    padding: 1.5rem;
+    transform: translateY(100%);
+    transition: transform 0.3s ease;
+}
+
+.facility-card:hover img {
+    transform: scale(1.1);
+}
+
+.facility-card:hover .facility-overlay {
+    transform: translateY(0);
+}
+
+/* Footer */
+footer {
+    background-color: var(--primary-color) !important;
+}
+
+.social-links a {
+    font-size: 1.5rem;
+    transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+    color: var(--secondary-color) !important;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.animate-fadeIn {
+    animation: fadeIn 1s ease-out forwards;
+}
+
+.delay-200 {
+    animation-delay: 200ms;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .carousel-item {
+        height: 70vh;
+    }
+
+    .carousel-caption {
+        padding: 1rem;
+    }
+
+    .carousel-caption h1 {
+        font-size: 2rem;
+    }
+}
+
+.image-4 {
+    margin-top: 100px;
+    height: 210px;
+    border-radius: 30px;
+    margin-left: 25px;
+}
+
+.images-school1 {
+    margin-top: 10px;
+}
+
+.card-vision {
+
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: box-shadow 0.3s ease;
+    margin-bottom: 30px;
+    border-radius: 30px;
+}
+
+.card-vision:hover {
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.4);
+}
+
+
+/* Basic Button Styles */
+.button-school1 {
+    background: linear-gradient(135deg, #e6f7ff, #bae7ff);
+    /* Light blue gradient */
+    border: none;
+    border-radius: 25px;
+    color: #007acc;
+    /* Deep blue for text */
+    padding: 12px 25px;
+    font-size: 1rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    /* Smooth animations */
+    outline: none;
+    
+}
+
+/* Hover Effect */
+button--school1:hover {
+    background: linear-gradient(135deg, #bae7ff, #e6f7ff);
+    /* Reverse gradient */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    /* Stronger shadow */
+    transform: translateY(-3px);
+    /* Slight lift effect */
+}
+
+/* Active State */
+button--school1:active {
+    transform: translateY(0);
+    /* No lift */
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+    /* Subtle shadow */
+}
+
+/* Focus State */
+button--school1:focus {
+    outline: 2px solid #91d5ff;
+    /* Light blue outline */
+}
+
+/* Disabled State */
+button-school1:disabled {
+    background: #f0f0f0;
+    /* Gray background */
+    color: #999;
+    /* Muted text */
+    cursor: not-allowed;
+    box-shadow: none;
+    transform: none;
+}
+
+/* Additional Animations */
+@keyframes buttonGlow {
+    0% {
+        box-shadow: 0 0 10px rgba(0, 122, 204, 0.2);
+    }
+
+    50% {
+        box-shadow: 0 0 20px rgba(0, 122, 204, 0.4);
+    }
+
+    100% {
+        box-shadow: 0 0 10px rgba(0, 122, 204, 0.2);
+    }
+}
+
+button:hover {
+    animation: buttonGlow 1.5s infinite;
+}
+
+.width-school {
+    width: 100px;
+}
+
+
+.fixed-image {
+    position: fixed;
+    top: px;
+    /* Adjust the position from the top */
+    right: 0px;
+    bottom: 0px;
+    /* Adjust the position from the right */
+    z-index: 100;
+    /* Ensure it stays above other content */
+}
+
+.fixed-image img {
+    width: 58px;
+    /* Adjust the size of the image */
+    height: auto;
+    border-radius: 10px;
+    /* Optional: adds rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.0);
+    /* Optional: adds a shadow effect */
+}
+
+.content {
+    padding: 20px;
+    max-width: 800px;
+    margin: auto;
+}
+.nav_hover:hover{
+    font-weight: bold;
+
+}
+.nav_hover{
+    font-family: IBM Plex Mono;
+}
+
+.button-school1team{
+    background: linear-gradient(135deg, #e6f7ff, #bae7ff);
+    /* Light blue gradient */
+    border: none;
+    border-radius: 20px;
+    color: #007acc;
+    /* Deep blue for text */
+    padding: 12px 25px;
+    font-size: 1rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    /* Smooth animations */
+    outline: none;
+    margin-right:25px;
+}
+.momories-section{
+    text-align: center;
+    background-color:#f8f9fa;
+}

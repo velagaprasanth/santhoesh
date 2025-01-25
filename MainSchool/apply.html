@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Excellence Academy</title>
+    <style>
+        /* General Reset */ 
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f8f9fa;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .login-container {
+            background: #ffffff;
+            width: 400px;
+            padding: 30px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            text-align: center;
+        }
+
+        .login-container h1 {
+            font-size: 24px;
+            color: #007bff;
+            margin-bottom: 20px;
+        }
+
+        .login-container p {
+            color: #6c757d;
+            margin-bottom: 20px;
+        }
+
+        .login-container label {
+            display: block;
+            font-size: 14px;
+            color: #333;
+            margin-bottom: 5px;
+            text-align: left;
+        }
+
+        .login-container input {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+
+        .login-container button {
+            width: 100%;
+            padding: 10px;
+            background-color: #007bff;
+            color: #ffffff;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        .login-container button:hover {
+            background-color: #0056b3;
+        }
+
+        .login-container a {
+            color: #007bff;
+            text-decoration: none;
+            display: block;
+            margin-top: 15px;
+        }
+
+        .login-container a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="login-container">
+        <h1>Excellence Academy</h1>
+        <p>Please Fill the Form For Admission </p>
+        <form>
+            <label for="student-name">Name of Student</label>
+            <input type="text" id="student-name" placeholder="Enter your full name" required>
+
+            <label for="father-name">Name of Father</label>
+            <input type="text" id="father-name" placeholder="Enter father's full name" required>
+
+            <label for="location">Location</label>
+            <input type="text" id="location" placeholder="Enter your location" required>
+
+            <label for="phone">Phone Number</label>
+            <input type="tel" id="phone" placeholder="Enter your phone number" maxlength="10" pattern="\d{10}" title="Enter a valid 10-digit phone number" required>
+
+            <button type="submit">Submit</button>
+        </form>
+        <div>
+    </div> 
+   
+</div>
+</body>
+</html>

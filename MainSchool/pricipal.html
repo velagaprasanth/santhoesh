@@ -1,0 +1,179 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>School Leadership | Inspiring Futures</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        :root {
+            --primary-blue: #007bff;
+            --soft-shadow: 0 10px 20px rgba(0, 123, 255, 0.1);
+            --transition-smooth: all 0.4s cubic-bezier(0.25, 0.1, 0.25, 1);
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            background-color: white;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        .leadership-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 60px 15px;
+        }
+
+        .leadership-header {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        .leadership-header h1 {
+            font-weight: 700;
+            color: var(--primary-blue);
+            letter-spacing: -1px;
+        }
+
+        .team-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+        }
+
+        .team-member {
+            background-color: white;
+            border-radius: 12px;
+            box-shadow: var(--soft-shadow);
+            padding: 30px;
+            text-align: center;
+            transition: var(--transition-smooth);
+            border: 2px solid transparent;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .team-member::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: linear-gradient(45deg,
+                    transparent,
+                    rgba(0, 123, 255, 0.05),
+                    transparent);
+            transform: rotate(-45deg);
+            transition: var(--transition-smooth);
+            opacity: 0;
+        }
+
+        .team-member:hover::before {
+            opacity: 1;
+        }
+
+        .team-member:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0, 123, 255, 0.15);
+            border-color: var(--primary-blue);
+        }
+
+        .member-avatar {
+            width: 180px;
+            height: 180px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 4px solid var(--primary-blue);
+            margin-bottom: 20px;
+            transition: var(--transition-smooth);
+        }
+
+        .founder-avatar {
+            box-shadow: 0 0 0 6px white, 0 0 0 10px var(--primary-blue);
+            animation: founder-pulse 2s infinite;
+        }
+
+        @keyframes founder-pulse {
+
+            0%,
+            100% {
+                transform: scale(1);
+            }
+
+            50% {
+                transform: scale(1.05);
+            }
+        }
+
+        .team-member h3 {
+            color: var(--primary-blue);
+            font-weight: 600;
+            margin-bottom: 10px;
+        }
+
+        .team-member p {
+            color: #6c757d;
+            font-size: 0.9rem;
+        }
+
+        @media (max-width: 768px) {
+            .team-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="leadership-container">
+        <div class="leadership-header">
+            <h1>Our Visionary Leadership Team</h1>
+            <p class="text-muted">Driving Innovation, Inspiring Excellence</p>
+        </div>
+
+        <div class="team-grid">
+            <!-- Founder (Highlighted) -->
+            <div class="team-member">
+                <img src="https://media.istockphoto.com/id/1364388471/photo/multiracial-male-principal-standing-outdoors-on-campus.jpg?s=612x612&w=0&k=20&c=xweBj18Ra0homW2Vvs20N27F2l6t-sOoYaeW5xdL5n0=" alt="Dr. Rajesh Kumar" class="member-avatar founder-avatar">
+                <h3>Dr. Rajesh Kumar</h3>
+                <p>Founder & Managing Director</p>
+                <p>A transformative leader with a vision to revolutionize education.</p>
+            </div>
+
+            <!-- Team Members -->
+            <div class="team-member">
+                <img src="https://media.istockphoto.com/id/678420912/photo/portrait-of-an-indian-lady-teacher.jpg?s=612x612&w=0&k=20&c=WWwgawsn_DZGkbMMRuVQsSg-U2qTa_pvxNlers_39W0=" alt="Priya Sharma" class="member-avatar">
+                <h3>Priya Sharma</h3>
+                <p>Chief Academic Officer</p>
+                <p>Pioneering innovative learning strategies and curriculum design.</p>
+            </div> <div class="team-member">
+                <img src="https://media.istockphoto.com/id/678420912/photo/portrait-of-an-indian-lady-teacher.jpg?s=612x612&w=0&k=20&c=WWwgawsn_DZGkbMMRuVQsSg-U2qTa_pvxNlers_39W0=" alt="Priya Sharma" class="member-avatar">
+                <h3>Priya Sharma</h3>
+                <p>Chief Academic Officer</p>
+                <p>Pioneering innovative learning strategies and curriculum design.</p>
+            </div>
+
+             <div class="team-member">
+                <img src="https://media.istockphoto.com/id/678420912/photo/portrait-of-an-indian-lady-teacher.jpg?s=612x612&w=0&k=20&c=WWwgawsn_DZGkbMMRuVQsSg-U2qTa_pvxNlers_39W0=" alt="Priya Sharma" class="member-avatar">
+                <h3>Priya Sharma</h3>
+                <p>Chief Academic Officer</p>
+                <p>Pioneering innovative learning strategies and curriculum design.</p>
+            </div>
+
+
+            <div class="team-member">
+                <img src="https://media.istockphoto.com/id/1367498582/photo/indian-teacher-stock-photo.jpg?s=612x612&w=0&k=20&c=mVC_e-kpK0DPwrVg0e8ST7w6eBiAs9bMG7uGEGnfN_o=" alt="Vikram Patel" class="member-avatar">
+                <h3>Vikram Patel</h3>
+                <p>Head of Administration</p>
+                <p>Ensuring operational excellence and strategic growth.</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
